@@ -76,7 +76,7 @@ int WINAPI WinMain(
 	HWnd = CreateWindowEx(
 		NULL,
 		L"WinClassFIR",
-		L"Windows Five In A Row",
+		L"Five In A Row",
 		WS_OVERLAPPEDWINDOW&~WS_MAXIMIZEBOX&~WS_SIZEBOX,
 		CW_USEDEFAULT,
 		CW_USEDEFAULT,
