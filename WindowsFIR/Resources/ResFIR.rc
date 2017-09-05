@@ -1,0 +1,184 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "windows.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""windows.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BOARD               BITMAP                  "..\\Resources\\ChessBoard.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU
+BEGIN
+    POPUP "Game"
+    BEGIN
+        MENUITEM "New Game",                    IDM_NEWG
+        MENUITEM "Exit",                        IDM_EXIT
+    END
+    MENUITEM "Undo",                        IDM_RETRACT
+    MENUITEM "About",                       IDM_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NEWG DIALOGEX 0, 0, 241, 107
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Game"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,125,85,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,179,85,50,14
+    CONTROL         "Black (Move first)",IDC_CHOOSEB,"Button",BS_AUTORADIOBUTTON | WS_GROUP,23,30,68,13
+    GROUPBOX        "Pick Side",IDC_STATIC,9,14,86,60
+    CONTROL         "White",IDC_CHOOSEW,"Button",BS_AUTORADIOBUTTON,23,52,35,10
+    GROUPBOX        "Difficulty",IDC_STATIC,100,14,57,60
+    CONTROL         "Easy",IDC_DIFE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,110,26,31,10
+    CONTROL         "Normal",IDC_DIFN,"Button",BS_AUTORADIOBUTTON,110,41,38,10
+    CONTROL         "Hard",IDC_DIFD,"Button",BS_AUTORADIOBUTTON,110,58,31,10
+    GROUPBOX        "AI Setting",IDC_STATIC,162,14,65,60
+    CONTROL         "MinMax",IDC_MINMAX,"Button",BS_AUTORADIOBUTTON | WS_GROUP,172,26,51,10
+    CONTROL         "AlphaBeta",IDC_ALPHABETA,"Button",BS_AUTORADIOBUTTON,172,41,54,10
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 200, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,91,63,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,145,63,50,14
+    LTEXT           "Five in a Row AI",IDC_STATIC,56,14,105,17
+    LTEXT           "Yang Guo 2017",IDC_STATIC,55,31,115,14
+    ICON            IDI_ICONF,IDC_STATIC,23,16,20,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_NEWG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICONF               ICON                    "Five.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_PUT                 WAVE                    "Put.wav"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_NEWG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
