@@ -107,13 +107,13 @@ int WINAPI WinMain(
 	return msg.wParam;
 }
 
-bool CheckIsGameOver(HWND hWnd)
+bool CheckIsGameOver(HWND hWnd, Chess chs)
 {
 	LPCWSTR Result;
 
-	if (gAI.IsGameOver((Chess)!gGameBoard.turn) != 0)
+	if (gAI.IsGameOver(chs) != 0)
 	{
-		if (gGameBoard.turn == BLACK)
+		if (chs == BLACK)
 			Result = L"Black wins!";
 		else
 			Result = L"White wins!";
@@ -138,7 +138,7 @@ void MakeMoveAndDrawBoard(HWND hWnd, HDC hDC, const Coordinate& MovePos, Chess c
 	gUI.PaintChess(hDC);
 	PlaySound(MAKEINTRESOURCE(IDR_PUT), gWinAppInstance, SND_RESOURCE | SND_ASYNC);
 
-	if (CheckIsGameOver(hWnd))
+	if (CheckIsGameOver(hWnd, chs))
 		PostQuitMessage(0);
 }
 

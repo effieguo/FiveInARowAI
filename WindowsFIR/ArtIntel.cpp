@@ -20,6 +20,7 @@ void ArtificialIntelligence::AIMakeMove(Chess chs, int depth, int alpha, int bet
 		MinMaxSearch(chs, depth);
 		break;
 	case AlphaBeta:
+		historyHeuristic.ResetHistoryTable();
 		AlphaBetaSearch(chs, depth, INT_MIN, INT_MAX);
 		break;
 	}
