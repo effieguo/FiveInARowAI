@@ -1,10 +1,10 @@
 # Five in a Row Gaming AI
 
+This is a Five in a Row game with a very powerful AI built with search based techniques. Five in a Row is a turn based game like go. Two place moves in turn and whoever manages to place 5 stones of the same color in a row wins the game. The AI player implemented here is able to search ahead 4 turns in a tolerable amount of time and can therefore easily beat myself as well as most other similar program I found on the internet.
+
 <div align="center">
  <img src="https://raw.githubusercontent.com/effieguo/FiveInARowAI/master/FIR.jpg" height="500px">
 </div>
-
-This is a Five in a Row game with a very powerful AI built with search based techniques. Five in a Row is a turn based game like go. Two place moves in turn and whoever manages to place 5 stones of the same color in a row wins the game. The AI player implemented here is able to search ahead 4 turns in a tolerable amount of time and can therefore easily beat myself as well as most other similar program I found on the internet.
 
 ### Technical Details
 - Minimax search and alpha-beta pruning is used to explore all the future possible moves for several turns ahead.
